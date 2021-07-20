@@ -1,10 +1,11 @@
 var username;
 var userresult;
-if (prompt("お名前を教えてください")　== ""){
+
+username = prompt("お名前を教えてください。")
+
+if (username　== ""){
     username = "名無し"　;
-}　else{
-    username = prompt("お名前を教えてください");
-}
+}　
 document.getElementById("name").innerHTML = username;
 var rand = Math.floor( Math.random() * 5) ;
 if (rand == 0) {
